@@ -2,7 +2,6 @@ import { useEffect, useMemo, useRef, useState } from "react"
 import type { LucideIcon } from "lucide-react"
 import {
   Activity,
-  Bot,
   Cable,
   ChartNoAxesCombined,
   CircleHelp,
@@ -52,6 +51,7 @@ import type {
   SetupCheckResult,
   StudioConfig,
 } from "@/types/studio"
+import clawdbotLogo from "@/assets/clawdbot-logo.png"
 
 type Section = "overview" | "visualizer" | "controls" | "setup" | "logs" | "guides"
 
@@ -416,9 +416,7 @@ function App() {
       <aside className="hidden w-[290px] border-r border-border/80 bg-white/80 px-4 py-6 backdrop-blur-sm lg:block">
         <div className="mb-6 px-2">
           <div className="flex items-center gap-3">
-            <div className="grid h-11 w-11 place-items-center rounded-xl bg-primary text-primary-foreground">
-              <Bot className="h-5 w-5" />
-            </div>
+            <img src={clawdbotLogo} alt="ClawDBot logo" className="h-11 w-11 rounded-xl border border-border/60 bg-white object-cover shadow-sm" />
             <div>
               <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Desktop</p>
               <h1 className="text-xl font-bold">ClawDBot Studio</h1>

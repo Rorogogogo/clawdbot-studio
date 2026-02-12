@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="ClawDBot logo">
+  <defs>
+    <linearGradient id="teal" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#31d3c7"/>
+      <stop offset="100%" stop-color="#39b9b4"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffb24d"/>
+      <stop offset="100%" stop-color="#f47f23"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#3db8b4" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="#f1f3f5"/>
+
+  <g filter="url(#soft)" stroke-linecap="round" stroke-linejoin="round">
+    <path
+      d="M512 174L763 320V614L512 760L261 614V320Z"
+      fill="white"
+      stroke="url(#teal)"
+      stroke-width="30"
+    />
+
+    <path d="M439 658L512 760L585 658L558 571H466Z" fill="url(#teal)" stroke="none"/>
+
+    <g stroke="url(#teal)" stroke-width="24" fill="none">
+      <path d="M424 554L344 472"/>
+      <path d="M600 554L680 472"/>
+      <path d="M374 457L426 405L373 369"/>
+      <path d="M650 457L598 405L651 369"/>
+      <circle cx="424" cy="554" r="26" fill="white"/>
+      <circle cx="600" cy="554" r="26" fill="white"/>
+    </g>
+
+    <circle cx="512" cy="596" r="46" fill="white" stroke="url(#teal)" stroke-width="20"/>
+    <circle cx="512" cy="596" r="15" fill="url(#teal)" stroke="none"/>
+
+    <g fill="url(#orange)" stroke="none">
+      <path d="M508 316L468 392H501L477 457L555 356H521L549 306Z"/>
+      <path d="M458 394L446 418H459L451 443L475 407H462L470 390Z"/>
+      <path d="M565 391L553 414H566L558 438L582 404H569L576 387Z"/>
+      <rect x="370" y="398" width="20" height="42" transform="rotate(-21 380 419)"/>
+      <rect x="631" y="398" width="20" height="42" transform="rotate(21 641 419)"/>
+    </g>
+  </g>
+</svg>

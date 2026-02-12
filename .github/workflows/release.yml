@@ -47,7 +47,10 @@ jobs:
       - name: Build installers
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: false
-        run: npm run dist
+        shell: bash
+        run: |
+          npm run build
+          npx electron-builder --publish never
 
       - name: Show generated files
         shell: bash
