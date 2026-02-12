@@ -76,5 +76,10 @@
     }
   },
   "description": "Desktop control center for ClawDBot with live API/WS monitoring and setup assistant.",
-  "author": "Roro"
+  "author": "Roro",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rorogogogo/clawdbot-studio.git"
+  },
+  "homepage": "https://github.com/Rorogogogo/clawdbot-studio"
 }

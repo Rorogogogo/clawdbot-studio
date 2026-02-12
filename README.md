@@ -32,13 +32,37 @@ npm run dev
 npm run build
 ```
 
-## Package desktop app
+## Package desktop app locally
 
 ```bash
 npm run dist
 ```
 
 Output artifacts are generated in `release/`.
+
+## Publish installers to GitHub Releases
+
+A workflow is included at `.github/workflows/release.yml`.
+
+### Option 1: Recommended (tag push)
+
+```bash
+git tag v0.1.1
+git push origin v0.1.1
+```
+
+This triggers a multi-platform build on GitHub Actions and publishes installers to Releases.
+
+### Option 2: Manual trigger
+
+- Go to **Actions** -> **Release Installers**
+- Click **Run workflow**
+- Set `tag` (example: `v0.1.1`)
+- Run
+
+After completion, users download from:
+
+- `https://github.com/Rorogogogo/clawdbot-studio/releases`
 
 ## End-user setup guide
 
